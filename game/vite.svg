@@ -1,0 +1,29 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景圆（可选，用于展示） -->
+    <circle cx="100" cy="100" r="90" fill="#F0F4F8"/>
+
+    <!-- 外部圆环/硬币轮廓 -->
+    <circle cx="100" cy="100" r="70" stroke="#2C3E50" stroke-width="8" fill="white"/>
+
+    <!-- 资金管理核心图形 -->
+    <g transform="translate(50, 50)">
+        <!-- 折线图背景网格 (简化) -->
+        <path d="M10 80 H90" stroke="#E0E0E0" stroke-width="2" stroke-linecap="round"/>
+        <path d="M10 55 H90" stroke="#E0E0E0" stroke-width="2" stroke-linecap="round"/>
+        <path d="M10 30 H90" stroke="#E0E0E0" stroke-width="2" stroke-linecap="round"/>
+
+        <!-- 上升的折线 (代表增长) -->
+        <polyline points="10,70 35,50 55,60 80,20 100,10"
+                  stroke="#27AE60"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"/>
+
+        <!-- 最后一个点的高亮 -->
+        <circle cx="100" cy="10" r="6" fill="#27AE60"/>
+
+        <!-- 货币符号 $ (代表资金) -->
+        <text x="15" y="85" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">$</text>
+    </g>
+</svg>
